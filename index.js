@@ -85,6 +85,6 @@ const app = http.createServer((request,response)=>{
     response.end(JSON.stringify(notes))
 })
     */
-const PORT =3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT)
 console.log(`el servidor esta corriendo en el puerto ${PORT}`)
